@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import { Item } from "./components/Item.js";
 import stockData from "./items.json";
 
 function App() {
@@ -62,6 +61,7 @@ function App() {
     if (a.target.id.trim()) {
       const data = stockData.find((b) => {
         if (b.name === a.target.id) return true;
+        return false;
       });
       if (selectedSide === "LEFT") {
         const newState = item.map((post) => {
@@ -110,6 +110,7 @@ function App() {
     if (e.target.id.trim()) {
       const data = stockData.find(function (post, index) {
         if (post.name === e.target.id) return true;
+          return false;
       });
 
       addItem({
