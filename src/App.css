@@ -1,0 +1,75 @@
+body {
+    background-color: #4E4E4E;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.info {
+  display: flex;
+  grid-template-columns: 1fr;
+  background-color: #4E4E4E;
+  grid-gap: 10px;
+}
+
+.yourValue {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100px;
+}
+
+.info2 {
+  display: flex;
+  grid-template-columns: 1fr;
+  background-color: #4E4E4E;
+  grid-gap: 10px;
+}
+
+.otherValue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100px;
+}
+
+.your-side {
+    display: grid;
+    align-items: start;
+grid-template-columns: repeat(5, auto);
+grid-auto-flow: row;
+}
+
+.item {
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    background-color: #4E4E4E;
+}
+
+.their-side {
+    height: 500px;
+        display: grid;
+    align-items: start;
+grid-template-columns: repeat(5, auto);
+grid-auto-flow: row;
+
+}
+
+.browser {
+    height: 1000px;
+    background-color: #202020;
+    grid-column: 1 / 3;
+ display: grid;
+    align-items: start;
+grid-template-columns: repeat(5, auto);
+grid-auto-flow: row;
+
+}
